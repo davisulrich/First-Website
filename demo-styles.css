@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    font-family: 'Silkscreen', cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    background-color: #000000;
+    color: #66ff8f;
+}
+.logo {
+    color: #66ff8f;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 22px;
+    padding: 13px 15px;
+}
+.logo:hover {
+    color: #000000;
+    background-color: #66ff8f;
+    /* font-size: 26px; */
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.nav-links {
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    width: 50%;
+}
+.nav-links a {
+    color: #66ff8f;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    /* for hover over: */
+    padding: 18px 25px;
+}
+.nav-links a:hover {
+    background-color: #f73325;
+    color: #000000;
+    font-weight: 700;
+}
+.nav-links li {
+    list-style: none;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #66ff8f;
+    margin: 6px;
+    transition: all 0.1s ease;
+}
+.burger:hover {
+    padding: 10px 10px;
+    background-color: #ffffff;
+}
+body {
+    background-color: #000000;
+    letter-spacing: 1px;
