@@ -368,8 +368,9 @@ ul {
   top: 0px;
   left: 0px;
   opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .transition-image:hover {
   opacity: 1;
-  animation: svg-fadein 0.5s ease;
+  /* animation: svg-fadein 0.5s ease; */
 }
