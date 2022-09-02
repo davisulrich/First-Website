@@ -6,8 +6,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* NavBar Styling */
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   min-height: 6vh;
@@ -15,57 +18,85 @@ nav {
   color: #66ff8f;
 }
 .logo {
+  height: 6vh;
+  width: 18vw;
+  min-width: 210px;
   color: #66ff8f;
   text-decoration: none;
-  text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 22px;
-  padding: 13px 15px;
 }
-.logo:hover {
+.logo a {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo a:hover {
   color: #000000;
   background-color: #66ff8f;
-  /* font-size: 26px; */
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
 }
 .nav-links {
   display: flex;
-  /* background-color: aqua; */
   justify-content: space-around;
-  width: 50%;
+  align-items: center;
+  min-height: 6vh;
+  width: 50vw;
+}
+.nav-links li {
+  list-style: none;
+  width: 12.5vw;
+  height: 6vh;
 }
 .nav-links a {
+  width: 100%;
+  height: 100%;
   color: #66ff8f;
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 16px;
-  /* for hover over: */
-  padding: 18px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .nav-links a:hover {
   background-color: #f73325;
   color: #000000;
   font-weight: 700;
 }
-.nav-links li {
-  list-style: none;
-}
 .burger {
   display: none;
   cursor: pointer;
+  height: 6vh;
+  width: 70px;
+  vertical-align: middle;
 }
-.burger div {
-  width: 25px;
+.burger-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.burger-inner div {
+  width: 40%;
   height: 2px;
   background-color: #66ff8f;
-  margin: 6px;
+  margin: 4px;
   transition: all 0.1s ease;
 }
 .burger:hover {
-  padding: 10px 10px;
-  background-color: #ffffff;
+  background-color: #9e7166;
+  /* background-color: #6c6c6c; */
 }
+
+/* Body Styling */
 body {
   background-color: #000000;
   letter-spacing: 1px;
@@ -82,6 +113,35 @@ img.forbidden_planet {
   width: 100%;
   height: auto;
 }
+.hometext1,
+.hometext2,
+.hometext3 {
+  padding-top: 20px;
+  height: 20vh;
+  vertical-align: center;
+}
+.hometext1 h1,
+.hometext2 h1,
+.hometext3 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 68px;
+  /* background-color: #66ff8f; */
+}
+.hometext2 h1 {
+  font-size: 60px;
+  /* background-color: aqua; */
+}
+.hometext3 h1 {
+  font-size: 70px;
+  /* background-color: #f73325;
+  color: #ffffff; */
+}
+
+/* About Page Styling */
 .aboutdiv {
   width: 100%;
   /* height: 140vh; */
@@ -103,6 +163,9 @@ ul {
   justify-content: space-around;
   width: 100%;
   height: 100vh;
+}
+.div-signup h1 {
+  font-size: 28px;
 }
 .form {
   width: 50%;
@@ -143,13 +206,15 @@ ul {
 .send-button button {
   background-color: #66ff8f;
   width: 23%;
+  min-width: 100px;
+  min-height: 36px;
   height: 23%;
   font-size: 20px;
   /* border: 2px solid #ffffff; */
   border-radius: 6px;
 }
 .send-button button:hover {
-  background-color: #51c470;
+  background-color: #9b57f5;
 }
 .resources {
   display: flex;
@@ -163,6 +228,27 @@ ul {
 @media screen and (max-width: 768px) {
   .nav-links a {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .hometext1 h1,
+  .hometext2 h1,
+  .hometext3 h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 868px) {
+  .hometext1 h1,
+  .hometext2 h1,
+  .hometext3 h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hometext1 h1,
+  .hometext2 h1,
+  .hometext3 h1 {
+    font-size: 30px;
   }
 }
 
@@ -186,12 +272,11 @@ ul {
   }
   .nav-links li {
     opacity: 0;
+    height: 100%;
+    width: 100%;
   }
-  .nav-links a {
-    /* display: flex;
-        flex-direction: column; */
-    font-size: 17px;
-    padding: 80px 79px;
+  .nav-links li > a {
+    font-size: 24px;
   }
   .burger {
     display: block;
@@ -214,7 +299,7 @@ ul {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-7px, 7px);
 }
 
 .toggle .line2 {
@@ -222,7 +307,7 @@ ul {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-7px, -7px);
 }
 
 /* about page spaceship */
@@ -268,4 +353,23 @@ ul {
   to {
     opacity: 1;
   }
+}
+
+/* About page image */
+.image-animation1 {
+  width: 100%;
+  position: relative;
+}
+.image-animation1 img {
+  width: 100%;
+}
+.transition-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+.transition-image:hover {
+  opacity: 1;
+  animation: svg-fadein 0.5s ease;
 }
