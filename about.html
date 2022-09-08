@@ -278,30 +278,36 @@
               </defs>
             </svg>
           </div>
-          <div class="form">
-            <div class="signup-text">
-              <h1>Send me a message!</h1>
-            </div>
-            <div class="nameboxdiv">
-              <label for="namebox">Name:</label>
-              <input type="namebox" class="namebox" />
-            </div>
-            <div class="emailboxdiv">
-              <label for="email">Email:</label>
-              <input type="email" class="emailbox" />
-            </div>
-            <div class="messageboxdiv">
-              <label for="message">Message:</label>
-              <textarea
-                name="messagebox"
-                id="message-id"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <div class="send-button">
-              <button>Send</button>
-            </div>
+          <div class="formdiv">
+            <form
+              class="message-form"
+              action="https://formspree.io/f/xdojawjn"
+              method="POST"
+            >
+              <div class="signup-text">
+                <h1>Send me a message!</h1>
+              </div>
+              <div class="nameboxdiv">
+                <label for="namebox">Name:</label>
+                <input type="namebox" class="namebox" />
+              </div>
+              <div class="emailboxdiv">
+                <label for="email">Email:</label>
+                <input type="email" name="_replyto" class="emailbox" />
+              </div>
+              <div class="messageboxdiv">
+                <label for="message">Message:</label>
+                <textarea
+                  name="body"
+                  id="message-id"
+                  cols="35"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="send-button">
+                <button type="submit">Send</button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="image-animation1">
@@ -325,6 +331,10 @@
             <li>
               CSS Image animation:
               https://www.youtube.com/watch?v=gWai7fYp9PY&t=328s
+            </li>
+            <li>
+              Form submission:
+              https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages
             </li>
           </ul>
         </div>

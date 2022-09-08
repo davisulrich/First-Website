@@ -92,7 +92,8 @@ nav {
   transition: all 0.1s ease;
 }
 .burger:hover {
-  background-color: #9e7166;
+  background-color: #8949e9;
+  /* background-color: #9e7166; */
   /* background-color: #6c6c6c; */
 }
 
