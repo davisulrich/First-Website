@@ -117,7 +117,7 @@ h1 {
   height: auto;
 }
 .home-image-div svg {
-  width: 60%;
+  width: 75%;
   height: auto;
   position: absolute;
   top: 30%;
@@ -402,7 +402,7 @@ ul {
   justify-self: center;
   animation: svg-fadein 7s ease-in-out;
 }
-#ship {
+#rocketship {
   animation: ship-move 3s linear infinite alternate;
 }
 #planet {
@@ -451,4 +451,110 @@ ul {
 }
 .transition-image:hover {
   opacity: 1;
+}
+.alien-svg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alien-svg svg {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: hide-aliens 10s 6s forwards;
+}
+#alien-1 {
+  animation: alien-hover 6s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#ship {
+  animation: ship-hover 4s linear infinite;
+}
+#hand-wave {
+  animation: hand-wave 2s linear infinite alternate;
+  transform-origin: right bottom;
+  transform-box: fill-box;
+}
+#dash-1,
+#dash-2,
+#dash-3,
+#dash-4,
+#dash-5 {
+  animation: lines-down 2s linear infinite alternate;
+}
+#dash-6,
+#dash-7,
+#dash-8,
+#dash-9,
+#dash-10 {
+  animation: lines-down 2s linear infinite alternate-reverse;
+}
+
+@keyframes alien-hover {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes ship-hover {
+  from {
+    transform: rotate(0deg) translateX(5px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(5px) rotate(-360deg);
+  }
+}
+@keyframes hand-wave {
+  from {
+    transform: rotateZ(-20deg);
+  }
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+@keyframes lines-down {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}
+@keyframes hide-aliens {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Demo File styles: */
+main.demo {
+  height: 94vh;
+}
+.hyperion-svgdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40%;
+  width: 100%;
+  align-items: center;
+  /* background-color: #66ff8f; */
+}
+.video-div {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.video-div video {
+  width: 90%;
+  height: auto;
 }
