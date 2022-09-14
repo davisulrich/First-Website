@@ -208,6 +208,14 @@ h1 {
   /* background-color: #f73325;
   color: #ffffff; */
 }
+.icecream-image {
+  width: 100%;
+  margin-top: 12vh;
+}
+.icecream-image img {
+  width: 100%;
+  height: auto;
+}
 
 /* About Page Styling */
 .aboutdiv {
