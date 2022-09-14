@@ -308,12 +308,22 @@ ul {
   .nav-links a {
     font-size: 14px;
   }
+  .logo {
+    letter-spacing: 5px;
+  }
+  .logo a:hover {
+    letter-spacing: 3px;
+  }
 }
 @media screen and (max-width: 1170px) {
   .hometext1 h1,
   .hometext2 h1,
   .hometext3 h1 {
     font-size: 50px;
+  }
+  .logo {
+    font-size: 18px;
+    width: 50vw;
   }
 }
 @media screen and (max-width: 868px) {
@@ -356,6 +366,9 @@ ul {
   }
   .nav-links li > a {
     font-size: 24px;
+  }
+  .logo {
+    font-size: 16px;
   }
   .burger {
     display: block;
