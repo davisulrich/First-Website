@@ -109,63 +109,126 @@ h1 {
   font-size: 24px;
   text-align: center;
 }
-.home-image-div {
+.hyperion-image-div {
   width: 100%;
 }
-.home-image-div img {
+.icecream-image-div {
+  width: 100%;
+  margin-top: 12vh;
+}
+.hyperion-image-div img,
+.icecream-image-div img {
   width: 100%;
   height: auto;
 }
-.home-image-div svg {
+.icecream-image-div img {
+  opacity: 0.8;
+}
+.hyperion-image-div svg {
   width: 75%;
   height: auto;
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20vh;
+  left: 12.5%;
 }
-#logo {
-  animation: fill 15s ease forwards 6.5s;
+.icecream-image-div svg {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 250vh;
+  left: 10%;
 }
-#logo path:nth-child(1) {
+#hyperion-svg {
+  animation: fill-white 15s ease forwards 6.5s;
+}
+#hyperion-svg path:nth-child(1) {
   stroke-dasharray: 450;
   stroke-dashoffset: 451;
   animation: line-anim 3s ease forwards;
 }
-#logo path:nth-child(2) {
+#hyperion-svg path:nth-child(2) {
   stroke-dasharray: 360;
   stroke-dashoffset: 360;
   animation: line-anim 3s ease forwards 0.5s;
 }
-#logo path:nth-child(3) {
+#hyperion-svg path:nth-child(3) {
   stroke-dasharray: 450;
   stroke-dashoffset: 450;
   animation: line-anim 3s ease forwards 1s;
 }
-#logo path:nth-child(4) {
+#hyperion-svg path:nth-child(4) {
   stroke-dasharray: 517.5;
   stroke-dashoffset: 517.5;
   animation: line-anim 3s ease forwards 1.5s;
 }
-#logo path:nth-child(5) {
+#hyperion-svg path:nth-child(5) {
   stroke-dasharray: 540;
   stroke-dashoffset: 540;
   animation: line-anim 3s ease forwards 2s;
 }
-#logo path:nth-child(6) {
+#hyperion-svg path:nth-child(6) {
   stroke-dasharray: 382.5;
   stroke-dashoffset: 382.5;
   animation: line-anim 3s ease forwards 2.5s;
 }
-#logo path:nth-child(7) {
+#hyperion-svg path:nth-child(7) {
   stroke-dasharray: 495;
   stroke-dashoffset: 495;
   animation: line-anim 3s ease forwards 3s;
 }
-#logo path:nth-child(8) {
+#hyperion-svg path:nth-child(8) {
   stroke-dasharray: 472.5;
   stroke-dashoffset: 472.5;
   animation: line-anim 3s ease forwards 3.5s;
+}
+
+#sprinkles-svg {
+  animation: fill-pink 15s ease forwards 6.5s;
+}
+#sprinkles-svg path:nth-child(1) {
+  stroke-dasharray: 832;
+  stroke-dashoffset: 832;
+  animation: line-anim 4s ease forwards;
+}
+#sprinkles-svg path:nth-child(2) {
+  stroke-dasharray: 640;
+  stroke-dashoffset: 640;
+  animation: line-anim 4s ease forwards 0.5s;
+}
+#sprinkles-svg path:nth-child(3) {
+  stroke-dasharray: 768;
+  stroke-dashoffset: 768;
+  animation: line-anim 4s ease forwards 1s;
+}
+#sprinkles-svg path:nth-child(4) {
+  stroke-dasharray: 544;
+  stroke-dashoffset: 544;
+  animation: line-anim 4s ease forwards 1.5s;
+}
+#sprinkles-svg path:nth-child(5) {
+  stroke-dasharray: 672;
+  stroke-dashoffset: 672;
+  animation: line-anim 4s ease forwards 2s;
+}
+#sprinkles-svg path:nth-child(6) {
+  stroke-dasharray: 704;
+  stroke-dashoffset: 704;
+  animation: line-anim 4s ease forwards 2.5s;
+}
+#sprinkles-svg path:nth-child(7) {
+  stroke-dasharray: 416;
+  stroke-dashoffset: 416;
+  animation: line-anim 4s ease forwards 3s;
+}
+#sprinkles-svg path:nth-child(8) {
+  stroke-dasharray: 736;
+  stroke-dashoffset: 736;
+  animation: line-anim 4s ease forwards 3.5s;
+}
+#sprinkles-svg path:nth-child(9) {
+  stroke-dasharray: 832;
+  stroke-dashoffset: 832;
+  animation: line-anim 4s ease forwards 3.5s;
 }
 
 @keyframes line-anim {
@@ -173,12 +236,20 @@ h1 {
     stroke-dashoffset: 0;
   }
 }
-@keyframes fill {
+@keyframes fill-white {
   from {
     fill: transparent;
   }
   to {
     fill: #ffffff;
+  }
+}
+@keyframes fill-pink {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ba03fc;
   }
 }
 .hometext1,
@@ -207,14 +278,6 @@ h1 {
   font-size: 70px;
   /* background-color: #f73325;
   color: #ffffff; */
-}
-.icecream-image {
-  width: 100%;
-  margin-top: 12vh;
-}
-.icecream-image img {
-  width: 100%;
-  height: auto;
 }
 
 /* About Page Styling */
@@ -578,4 +641,27 @@ main.demo {
 .video-div video {
   width: 90%;
   height: auto;
+}
+.hyperion-play-link,
+.sprinkles-play-link {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hyperion-play-link a,
+.sprinkles-play-link a {
+  font-size: 48px;
+  color: #66ff8f;
+}
+.sprinkles-play-link a {
+  color: #ba03fc;
+}
+.hyperion-play-link:hover {
+  background: url(images/hyperion-enemies-resized.png);
+}
+.sprinkles-play-link:hover {
+  background: url(images/sprinkles-sample.png) no-repeat;
+  background-size: cover;
 }
