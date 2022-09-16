@@ -390,13 +390,14 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 30vh;
+  height: auto;
   width: 100%;
   margin-top: 10vh;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .give-thanks-div h1 {
   font-size: 32px;
+  padding-bottom: 30px;
 }
 .give-thanks-div p {
   width: 70%;
@@ -520,7 +521,7 @@ ul {
   justify-content: center;
   align-items: center;
   line-height: 64px;
-  margin-top: 7vh;
+  /* margin-top: 7vh; */
 }
 .about-me-div p {
   font-size: 24px;
@@ -537,12 +538,25 @@ ul {
   opacity: 0.8;
 }
 .spaceshipsvg svg {
-  width: 80%;
+  width: 100%;
   justify-self: center;
   animation: svg-fadein 5s ease-in-out;
 }
-#tripper-guy {
+/* #tripper-guy {
   animation: guy-move 3s linear infinite alternate;
+} */
+#rocket {
+  animation: rocket-hover 3s linear infinite alternate;
+}
+#disk-1 {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: disk-1-rotate 2s linear infinite alternate;
+}
+#disk-2 {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: disk-1-rotate 2s linear infinite alternate-reverse;
 }
 #rocketship {
   animation: ship-move 3s linear infinite alternate;
@@ -551,12 +565,28 @@ ul {
   animation: planet-orbit 6s linear infinite alternate;
 }
 
-@keyframes guy-move {
+/* @keyframes guy-move {
   from {
     transform: translate(0px, 0px);
   }
   to {
     transform: translate(0px, -250px);
+  }
+} */
+@keyframes rocket-hover {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -50px);
+  }
+}
+@keyframes disk-1-rotate {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
   }
 }
 @keyframes ship-move {
