@@ -385,13 +385,25 @@ ul {
 .send-button button:hover {
   background-color: #9b57f5;
 }
-.resources {
+.give-thanks-div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 30vh;
   width: 100%;
+  margin-top: 10vh;
+  padding-bottom: 50px;
+}
+.give-thanks-div h1 {
+  font-size: 32px;
+}
+.give-thanks-div p {
+  width: 70%;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -500,7 +512,20 @@ ul {
 .toggle .line3 {
   transform: rotate(45deg) translate(-7px, -7px);
 }
-
+.about-me-div {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 64px;
+  margin-top: 7vh;
+}
+.about-me-div p {
+  font-size: 24px;
+  color: #66ff8f;
+}
 /* about page spaceship */
 .spaceshipsvg {
   width: 50%;
@@ -508,11 +533,16 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  opacity: 0.8;
 }
 .spaceshipsvg svg {
-  width: 100%;
+  width: 80%;
   justify-self: center;
-  animation: svg-fadein 7s ease-in-out;
+  animation: svg-fadein 5s ease-in-out;
+}
+#tripper-guy {
+  animation: guy-move 3s linear infinite alternate;
 }
 #rocketship {
   animation: ship-move 3s linear infinite alternate;
@@ -521,6 +551,14 @@ ul {
   animation: planet-orbit 6s linear infinite alternate;
 }
 
+@keyframes guy-move {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -250px);
+  }
+}
 @keyframes ship-move {
   from {
     transform: translate(0px, 0px);

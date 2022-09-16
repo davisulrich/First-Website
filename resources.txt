@@ -1,0 +1,6 @@
+Git help: https://www.datacamp.com/tutorial/git-push-pull
+Animated Image: https://undraw.co/search
+CSS Image animation: https://www.youtube.com/watch?v=gWai7fYp9PY&t=328s
+Form submission: https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages
+Google Domains/GitHub Pages: https://www.youtube.com/watch?v=rKz6kIW4Uos
+Navbar help: Youtube: youtube.com/watch?v=gXkqy0b4M5g</li>
