@@ -254,30 +254,49 @@ h1 {
 }
 .hometext1,
 .hometext2,
-.hometext3 {
+.hometext3,
+.sprinkles-text-1,
+.sprinkles-text-2,
+.sprinkles-text-3 {
   padding-top: 20px;
   height: 20vh;
   vertical-align: center;
 }
 .hometext1 h1,
 .hometext2 h1,
-.hometext3 h1 {
+.hometext3 h1,
+.sprinkles-text-1 h1,
+.sprinkles-text-2 h1,
+.sprinkles-text-3 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   vertical-align: middle;
   font-size: 68px;
-  /* background-color: #66ff8f; */
+}
+.sprinkles-text-1 h1,
+.sprinkles-text-2 h1,
+.sprinkles-text-3 h1 {
+  color: #ba03fc;
 }
 .hometext2 h1 {
-  font-size: 56px;
-  /* background-color: aqua; */
+  font-size: 64px;
 }
 .hometext3 h1 {
   font-size: 70px;
-  /* background-color: #f73325;
-  color: #ffffff; */
+}
+.back-to-top-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 5vh;
+}
+.back-to-top-div a {
+  color: #66ff8f;
 }
 
 /* About Page Styling */
@@ -389,7 +408,10 @@ ul {
 @media screen and (max-width: 1170px) {
   .hometext1 h1,
   .hometext2 h1,
-  .hometext3 h1 {
+  .hometext3 h1,
+  .sprinkles-text-1 h1,
+  .sprinkles-text-2 h1,
+  .sprinkles-text-3 h1 {
     font-size: 50px;
   }
   .logo {
@@ -400,14 +422,20 @@ ul {
 @media screen and (max-width: 868px) {
   .hometext1 h1,
   .hometext2 h1,
-  .hometext3 h1 {
+  .hometext3 h1,
+  .sprinkles-text-1 h1,
+  .sprinkles-text-2 h1,
+  .sprinkles-text-3 h1 {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 650px) {
   .hometext1 h1,
   .hometext2 h1,
-  .hometext3 h1 {
+  .hometext3 h1,
+  .sprinkles-text-1 h1,
+  .sprinkles-text-2 h1,
+  .sprinkles-text-3 h1 {
     font-size: 30px;
   }
 }
