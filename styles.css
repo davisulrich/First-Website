@@ -112,10 +112,12 @@ h1 {
 }
 .hyperion-image-div {
   width: 100%;
+  position: relative;
 }
 .icecream-image-div {
   width: 100%;
   margin-top: 12vh;
+  position: relative;
 }
 .hyperion-image-div img,
 .icecream-image-div img {
@@ -125,19 +127,22 @@ h1 {
 .icecream-image-div img {
   opacity: 0.8;
 }
-.hyperion-image-div svg {
-  width: 75%;
-  height: auto;
+.hyperion-svg-div {
   position: absolute;
-  top: 20vh;
+  top: 20%;
+  width: 100%;
   left: 12.5%;
 }
-.icecream-image-div svg {
-  width: 80%;
-  height: auto;
+.icecream-svg-div {
   position: absolute;
-  top: 250vh;
-  left: 10%;
+  top: 42%;
+  width: 100%;
+  left: 12.5%;
+}
+.hyperion-svg-div svg,
+.icecream-svg-div svg {
+  width: 75%;
+  height: auto;
 }
 #hyperion-svg {
   animation: fill-white 15s ease forwards 6.5s;
