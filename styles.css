@@ -5,6 +5,13 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+p::selection,
+h1::selection,
+label::selection {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* NavBar Styling */
